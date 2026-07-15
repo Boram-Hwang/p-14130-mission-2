@@ -2,6 +2,7 @@ package com
 
 fun main() {
     println("== 명언 앱 ==")
+    var index = 0;
 
     while (true) {
         print("명령) ")
@@ -15,6 +16,8 @@ fun main() {
             val content = readlnOrNull()?.trim()
             print("작가 : ")
             val author = readlnOrNull()?.trim()
+
+            println("${++index}번 명언이 등록되었습니다.")
         }
     }
 }
