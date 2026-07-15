@@ -33,6 +33,13 @@ fun main() {
             wiseSayings.add(wiseSaying)
 
             println("${wiseSaying.id}번 명언이 등록되었습니다.")
+        } else if(input == "목록") {
+            println("번호 / 작가 / 명언")
+            println("----------------------")
+
+            for (wiseSaying in wiseSayings.reversed()) {
+                println("${wiseSaying.id} / ${wiseSaying.author} / ${wiseSaying.content}")
+            }
         }
     }
 }
